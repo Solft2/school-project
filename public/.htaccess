@@ -1,0 +1,5 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILNEMA} !-f
+RewriteCond %{REQUEST_FILNEMA} !-d
+RewriteRule ^(.*)$. index.php?url=$1 [L,QSA]
